@@ -1,0 +1,92 @@
+/* Full page background */
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.register-div {
+  background: #ffffff;
+  padding: 40px 35px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Heading */
+.register-div h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields */
+.register-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+/* Input focus effect */
+.register-form input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Button */
+.register-submit {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button hover */
+.register-submit:hover {
+  background: #5563d6;
+}
+
+/* Disabled button */
+.register-submit:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error-p {
+  margin-top: 15px;
+  color: red;
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
